@@ -33,3 +33,4 @@ leftArrow.addEventListener('click', () => {
         updateSlider();
     }
 });
+
