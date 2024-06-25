@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="Emmy-liz is a non-profit organization dedicated
+to addressing the unique needs of individuals dealing with various health issues and chronic diseases. "/>
     <link rel="stylesheet" href="styles.css" />
     <title>Emmy-liz Divine Medical Foundation</title>
+    
     <script src="https://kit.fontawesome.com/0f4d71be75.js" crossorigin="anonymous"></script>
+    
   </head>
   <body>
     <header>
@@ -19,7 +23,7 @@
           <li><a href="#mission">What We Do</a></li>
           <li><a href="#team">Meet The Team</a></li>
           <li><a href="#footer">Contact</a></li>
-          <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <li> <a href="javascript:void(0);" class="icon" onclick="myQuery()">
     <i class="fa fa-bars"></i>
   </a></li>
         </ul>
@@ -154,50 +158,74 @@ Antual prescription refill
               <img src="./images/UZOCHUKWU IKECHUKWU BETHEL.png" alt="Team Member 1" />
               <h3>Uzochukwu Ikechukwu Bethel</h3>
               <p>Project Manager</p>
-              <button id="myBtn" class="btn">Read More</button>
+              <button id="openModal1" class="btn">Read More</button>
             </div>
             <div class="team-member position">
               <img src="./images/Uzezi Uduefe-Ideho.png" alt="Team Member 2" />
               <h3>Uzezi Uduefe-Ideho</h3>
               <p>Secretary</p>
-              <button class="btn">Read More</button>
+              <button class="btn" id="openModal2" >Read More</button>
             </div>
             <div class="team-member position">
               <img src="./images/Dr Anozie Bryan chidi.png" alt="Team Member 3" />
               <h3>Dr Anozie Bryan Chidi</h3>
               <p>Project Coordinator </p>
-              <button id="myBtn" class="btn" >Read More</button>
+              <button id="openModal3" class="btn" >Read More</button>
             </div>
             <div class="team-member position">
               <img src="./images/Dr Anozie Bryan chidi.png" alt="Team Member 3" />
-              <h3>Dr Anozie Bryan Chidi</h3>
+              <h3>Leke Ann-Linda Efuribe</h3>
               <p>Project Coordinator </p>
-              <button class="btn">Read More</button>
+              <button class="btn" id="openModal4" >Read More</button>
             </div>
+          </div>
+
+          <div class="video">
+
+            <iframe width="80%" height="778" src="https://www.youtube.com/embed/rFAcq2V0_Ak" frameborder="20"></iframe>
           </div>
           <button class="btn">Become a Volunteer</button>
           
 
-          <div id="myModal" class="modal">
+          <div id="modal1" class="modal">
 
   <!-- Modal content -->
    
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span id="closeModal1" class="close">&times;</span>
     <p>My job description is to Get a conducive, safe and secure location for outreaches, health programmes, handle all logistics, prepare Graphic designs for the Media, cinematographic coverage, promotion/awareness of our events, manage security and courtesy at the venues and ensure a good working condition for the team and Audience at every event, from start to finish.
   I can be called The FIELD OFFICER, as I handle negotiations and I interface with the crowd and the team for friendly communication, understanding and correspondence of The vision, Mission and Core Values of the Foundation, Practically. </p>
   </div>
 
 </div>
 
-     <div id="myModal" class="modal">
+     <div id="modal2" class="modal">
 
   <!-- Modal content -->
    
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>My job description is to Get a conducive, safe and secure location for outreaches, health programmes, handle all logistics, prepare Graphic designs for the Media, cinematographic coverage, promotion/awareness of our events, manage security and courtesy at the venues and ensure a good working condition for the team and Audience at every event, from start to finish.
-  I can be called The FIELD OFFICER, as I handle negotiations and I interface with the crowd and the team for friendly communication, understanding and correspondence of The vision, Mission and Core Values of the Foundation, Practically. </p>
+    <span  class="close" id='closeModal2'>&times;</span>
+    <p>My name is Dr Anozie Bryan chidi, a medical doctor who graduated with MBBS from University of Nigeria Nsukka, I'm a certified project management professional in health, and I'm the project coordinator of Emmy Liz Divine medical mission. </p>
+  </div>
+
+</div>
+  <div id="modal3" class="modal">
+
+  <!-- Modal content -->
+   
+  <div class="modal-content">
+    <span  class="close" id='closeModal3'>&times;</span>
+    <p>My name is Dr Anozie Bryan chidi, a medical doctor who graduated with MBBS from University of Nigeria Nsukka, I'm a certified project management professional in health, and I'm the project coordinator of Emmy Liz Divine medical mission. </p>
+  </div>
+
+</div>
+  <div id="modal4" class="modal">
+
+  <!-- Modal content -->
+   
+  <div class="modal-content">
+    <span  class="close" id='closeModal4'>&times;</span>
+    <p>Leke Ann-Linda Efuribe, a Nigerian resident licensed Pediatric Nurse. She  started her career in May 2009 in a private Pediatric hospital in the South Western part of Nigeria.  She later relocated to the south eastern side of the country where she is practicing as a Pediatric Nurse in Federal Teaching Hospital Owerri, Imo state. </p>
   </div>
 
 </div>
@@ -207,7 +235,7 @@ Antual prescription refill
     <script src="app.js"></script>
     <script>
       
-function myFunction() {
+function myQuery() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -215,31 +243,7 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 </script>
   </body>
   <footer id="footer">
