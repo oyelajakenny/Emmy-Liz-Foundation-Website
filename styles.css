@@ -307,7 +307,11 @@ button {
 
 .position p {
   text-align: center;
-  margin-top: 0;
+  margin-top: -20px;
+
+}
+.position h3{
+margin-bottom: px;
 }
 
 footer {
@@ -438,6 +442,9 @@ width: 100%;
     border-radius: 10px;
     /* box-shadow:0 4px 6px -1px #0000001a,0 2px 4px -2px #0000001a; */
   }
+  .position h3, p{
+    margin: 0;
+  }
   .services {
     padding: 2% 2%;
     text-align: center;
@@ -447,6 +454,11 @@ width: 100%;
     padding: 1% 2%;
     margin: 2%;
   }
+  .video-section{
+  background-color: #22addd;
+  width: 100%;
+
+}
 }
 
 @media only screen and (max-width: 480px) {
