@@ -12,28 +12,30 @@ to addressing the unique needs of individuals dealing with various health issues
     
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="./images/Emmy-liz logo.png.png" alt="Logo" />
+    <section class="header">
+      
+      <nav>
+      <div class="container-icon">
+        <img class="primary-logo" src="./images/Emmy-liz logo.png.png" />
       </div>
-      <nav class="topnav" id="myTopnav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#mission">What We Do</a></li>
-          <li><a href="#team">Meet The Team</a></li>
-          <li><a href="#footer">Contact</a></li>
-          <li> <a href="javascript:void(0);" class="icon" onclick="myQuery()">
-    <i class="fa fa-bars"></i>
-  </a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
+      <ul class="nav-list" id="na-list">
+        <li class="list-items">
+          <a>Home</a>
+        </li>
+        <li class="list-items"><a>About us</a></li>
+        <li class="list-items"><a>What We Do</a></li>
+        <li class="list-items"><a>Meet The Team</a></li>
+        <li class="list-items"><a>Contact Us</a></li>
+        <li class="list-items"><a>Volunteer</a></li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
       </div>
-      <section class="hero">
+    </nav>
+     
+      <div class="hero">
         <h2>Your pathway to</br> healthy living</h2>
           <p>Emmy-liz is a non-profit organization dedicated to addressing the unique</br> needs of individuals dealing with various health issues and chronic diseases.</br>
             Our mission is to provide quality healthcare services </br> to the less
@@ -52,23 +54,30 @@ to addressing the unique needs of individuals dealing with various health issues
         <!-- <div class="hero-image">
           <img src="images/hero-image.jpg" alt="Hero Image" />
         </div> -->
-      </section>
+      </div>
+    </section>
+    <main>
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+      
       <section class="services">
         <div class="service-wrapper">
         <div class="service">
-        <img src="./images/mentally.png" alt="Medical Outreach" />
+        <img src="./images/mentally.png" alt="Medical Outreach" width="100%">
           <h3>Medical Outreach</h3>
          
         </div>
+       
         <div class="service">
-          <img src="./images/drug.png" alt="Mentally Aware Nigeria" />
-          <h3>Health and Nutrition Education</h3>
-        
-        </div>
-        <div class="service">
-          <img src="./images/nutrition.png" alt="Annual Prescription Refill" />
+          <img src="./images/nutrition.png" alt="Annual Prescription Refill" width="100%"/>
           <h3>Annual Prescription Refill</h3>
           
+        </div>
+         <div class="service">
+          <img src="./images/drug.png" alt="Mentally Aware Nigeria" width="100%" />
+          <h3>Health and Nutrition </h3>
+        
         </div>
       </div>
         </section>
@@ -180,10 +189,9 @@ Antual prescription refill
             </div>
           </div>
 
-          <div class="video">
+        
 
-            <iframe width="80%" height="778" src="https://www.youtube.com/embed/rFAcq2V0_Ak" frameborder="20"></iframe>
-          </div>
+            
           <button class="btn">Become a Volunteer</button>
           
 
@@ -230,21 +238,15 @@ Antual prescription refill
 
 </div>
         </section>
-       
-    </main>
+       <section class="video-section"><iframe width="100%" height="750px" src="https://www.youtube.com/embed/aaiQ-4uU1-M" title="Emmy-Liz divine medical mission 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></section>
     <script src="app.js"></script>
     <script>
-      
-function myQuery() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-</script>
+        const toggleButton = document.getElementById("toggle-button")
+        const navList = document.getElementById("na-list")
+        toggleButton.addEventListener('click', () =>{
+            navList.classList.toggle('active')
+        })
+    </script>
   </body>
   <footer id="footer">
     <div class="footer-content">
@@ -260,7 +262,7 @@ function myQuery() {
         </div>
         <div class="socials">
           <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/emmy_liz_medical_foundation"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-x"></i></a>
           <a href="#"><i class="fab fa-whatsapp"></i></a>
           </div>
