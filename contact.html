@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container-icon">
+        <img class="primary-logo" src="./images/Emmy-liz logo.png.png" />
+      </div>
+      <ul class="nav-list" id="na-list">
+        <li class="list-items">
+          <a>Home</a>
+        </li>
+        <li class="list-items"><a>About us</a></li>
+        <li class="list-items"><a>What We Do</a></li>
+        <li class="list-items"><a>Meet The Team</a></li>
+        <li class="list-items"><a>Contact Us</a></li>
+        <li class="list-items"><a>Volunteer</a></li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+    <script>
+        const toggleButton = document.getElementById("toggle-button")
+        const navList = document.getElementById("na-list")
+        toggleButton.addEventListener('click', () =>{
+            navList.classList.toggle('active')
+        })
+    </script>
+  </body>
+</html>
