@@ -149,10 +149,12 @@ i {
 }
 
 .about {
-  /* background-image: url(../images/about.png); */
+  background-image: url(../images/about.png);
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 30vh;
+  display: flex;
+  align-items: center;
 }
 
 .about-content {
@@ -170,6 +172,9 @@ i {
   text-align: center;
   padding: 5% 20%;
   height: 40vh;
+  
+  display: flex;
+  align-items: center;
 }
 .service-wrapper {
   display: flex;
@@ -178,8 +183,9 @@ i {
 
 .service {
   width: 25%;
-  padding: 1% 2%;
+  padding: 0 2%;
   margin: 2%;
+  font-size: 12px;
 }
 .service img {
   display: block;
@@ -188,7 +194,9 @@ i {
   transform: scale(1.1);
   transition: transform 0.5s ease-out;
 }
-
+.mission-section{
+  height: 100vh;
+}
 .mission-vision {
   display: flex;
   justify-content: space-between;
@@ -428,13 +436,13 @@ footer p {
   }
 
   .hero h2 {
-    font-size: 5vh;
-    margin-top: 30%;
+    font-size: 4vh;
+    margin-top: 40%;
     margin-bottom: 20px;
   }
 
   .hero p {
-    font-size: 2.4vh;
+    font-size: 17px;
     margin-bottom: 20px;
     line-height: 1.5;
   }
@@ -468,9 +476,12 @@ footer p {
     border-bottom: 5px solid #22addd;
     border-radius: 10px;
   }
+  
   .team-members {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin-bottom: 2%;
   }
   .team-member {
     width: 100%;
@@ -480,6 +491,9 @@ footer p {
     border-radius: 10px;
     /* box-shadow:0 4px 6px -1px #0000001a,0 2px 4px -2px #0000001a; */
   }
+  .paragraph p {
+  margin-top: 0;
+}
   .position h3,
   p {
     margin: 0;
@@ -529,14 +543,19 @@ footer p {
     background-color: #44c5b1;
   }
   .about {
-    padding: 2% 0%;
+    padding: 2% 2%;
     text-align: center;
-    height: 60vh;
+    height: 50vh;
+    /* background-image: url(../images/about.png); */
   }
 
   .about-content {
-    padding: 1% 5%;
+    
     text-align: center;
+  }
+
+  .about-content p{
+    font-size: 15px;
   }
 
   .mission-vision {
@@ -547,13 +566,21 @@ footer p {
   }
   .mission {
     width: 100%;
-    padding: 0 1%;
+    padding: 0 2%;
     background-color: #f9fafb;
     border-radius: 10px;
     border-top: 5px solid #44c5b1;
     box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+    margin-bottom: 5%;
   }
-
+.mission p{
+  font-size: 15px;
+}
+.our-team {
+  padding: 5% 5%;
+  text-align: center;
+ width: ;
+}
   .team-members {
     display: flex;
     flex-direction: column;
