@@ -99,22 +99,24 @@ const hero = document.getElementById("header");
 
 // Array of background images
 const images = [
-  "url(images/hero.png)",
-  "url(images/3.jpg)",
-  "url(images/1.png)",
-  "url(images/5.jpg)",
+  "url('images/hero.webp')",
+  "url('images/3.jpg')",
+  "url('images/1.png')",
+  "url('images/5.jpg')",
 ];
 
 let newIndex = 0;
 
 // Function to change the background image
 function changeBackground() {
-  hero.style.backgroundImage = images[newIndex];
-  newIndex = (newIndex + 1) % images.length;
+  if (hero) {
+    hero.style.backgroundImage = images[newIndex];
+    newIndex = (newIndex + 1) % images.length;
+  }
 }
-
-// Change background image every 10 seconds
-setInterval(changeBackground, 10000);
 
 // Initial call to set the first image
 changeBackground();
+
+// Change background image every 10 seconds
+setInterval(changeBackground, 10000);
